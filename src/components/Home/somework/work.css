@@ -1,0 +1,61 @@
+.work{
+    text-align: center;
+    padding: 4rem 3rem;
+}
+.work p{
+    color: #323232;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin: 18px 0px;
+}
+.work .hr{
+    background-color: #ecba30;
+    width:5%;
+    margin: auto;
+}
+.workimg {
+    overflow: hidden;
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.workimgcol {
+    overflow: hidden;
+    flex: 1;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease; /* Ensure smooth transition for all properties */
+}
+
+.workimg img {
+    filter: grayscale(20%) brightness(50%);
+    transition: filter 0.5s ease; /* Smooth transition for filter property */
+}
+
+.workimgcol .workcontent {
+    font-family: "Montserrat", sans-serif;
+    background-color: #323232;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    bottom: 50%;
+    z-index: 2;
+    transition: bottom 0.5s ease; /* Smooth transition for bottom property */
+}
+
+.workimgcol:hover .workcontent {
+    bottom: 0%;
+}
+
+.workimgcol:hover img {
+    filter: grayscale(0%) brightness(100%);
+}

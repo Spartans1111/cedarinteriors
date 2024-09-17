@@ -1,0 +1,121 @@
+nav{
+    font-family: "Montserrat", sans-serif;  
+    display: flex;
+    align-items: center;
+    padding: 5px 3rem;
+    justify-content: space-between;
+    box-shadow: rgba(204, 212, 221, 0.8) 0px 8px 24px;
+    overflow-x: hidden;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style:none;
+}
+nav ul li a{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: var(--black);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.navbtn-container{
+
+    display: flex;   
+    margin-left: 20px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0px 20px;
+}
+.navbtn{
+    font-family: "Montserrat", sans-serif;  
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding: 9px 12px 9px 15px;
+    border-radius: 35px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+.navbtn span{
+    vertical-align: middle;
+    margin-left: 7px;
+    font-size: 12px;
+}
+.navbtn-contact{
+    border: 1px solid #CC8835;
+    color: #CC8835;
+    background-color:#f5e7d7;
+}
+.navbtn-quotation{
+    color: #fff;
+    background-color:var(--rose);
+    border:1px solid var(--rose);
+}
+.humbargur{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--yellow);
+}
+.active-link{
+    color: var(--rose);
+}
+/*media query--*/
+@media screen and (max-width:900px){
+    nav{
+        overflow-x: hidden;
+    }
+    .humbargur{
+        display: block;
+    }
+    nav ul li{
+        display:block;
+        padding: 20px 0px;
+        text-align: center;
+        
+        width:100%;
+    }
+    nav ul{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80vh;
+        top: 6%;
+        right: 100%;
+        background-color: var(--white);
+        z-index: 99;
+        text-align: center;
+        align-items: center;
+        transition: all 0.5s;
+    }
+    .navbtn-container{
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 20px;
+    }
+    .navlinkactive{
+        right: 0;
+    }
+    nav{
+        padding: 5px 1rem;
+    }
+    .logo img{
+        width: 75%;
+
+    }
+    .humbargur{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 368px){
+    nav{
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
